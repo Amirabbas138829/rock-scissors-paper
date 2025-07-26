@@ -1,6 +1,6 @@
 import random
 
-game=['stone','paper','scissors']
+game=['rock','paper','scissors']
  
 computer=''
 
@@ -14,7 +14,7 @@ while(loop_game):
 
 
 
-    you = input("select!(paper,stone,scissors) ")
+    you = input("select!(paper,rock,scissors) ")
 
     if you=="0":
         shart_bazi=False
@@ -23,24 +23,24 @@ while(loop_game):
     rand=random.randint(0,2)
     computer=game[rand]
 
-    if you=="stone" and computer=='paper':
+    if you=="rock" and computer=='paper':
         computer_point=computer_point+1
 
     if you=='scissors' and computer=='paper':
         you_point=you_point+1
 
 
-    if you=='stone' and computer=='scissors':
+    if you=='rock' and computer=='scissors':
         you_point=you_point+1
 
     if you=='paper' and computer=='scissors':
         computer_point=computer_point+1
 
 
-    if you=='scissors' and computer=='stone':
+    if you=='scissors' and computer=='rock':
         computer_point=computer_point+1
 
-    if you=='paper' and computer=='stone':
+    if you=='paper' and computer=='rock':
         you_point=you_point+1
 
 
